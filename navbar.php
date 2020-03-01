@@ -23,6 +23,11 @@
     
       
 <!--cart link-->
+      
+       <div class="cart-view">
+        <a href="viewCart.php" title="View Cart"><i class="fa fa-shopping-cart"></i> (<?php echo ($cart->total_items() > 0)?$cart->total_items().' Items':'Empty'; ?>)</a>
+
+    </div> 
   </div>
 </nav>
 </header>
