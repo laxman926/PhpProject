@@ -1,6 +1,9 @@
 <header>
 <!-- Bootstrap link -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
+<?php // Initialize shopping cart class 
+include_once 'Cart.class.php'; 
+$cart = new Cart; ?>
 
 <nav class="navbar navbar-expand-lg navbar-dark " style="background-color:#232f3e">
   <a class="navbar-brand" href="#">BookShop</a>
@@ -21,13 +24,9 @@
     </ul>
    
     
-      
-<!--cart link-->
-      
-       <div class="cart-view">
-        <a href="viewCart.php" title="View Cart"><i class="fa fa-shopping-cart"></i> (<?php echo ($cart->total_items() > 0)?$cart->total_items().' Items':'Empty'; ?>)</a>
+        <a href="viewCart.php" title="View Cart" style="color:white;"><i class="fa fa-shopping-cart"></i> (<?php echo ($cart->total_items() > 0)?$cart->total_items().' Items':'Empty'; ?>)</a>
+    
 
-    </div> 
   </div>
 </nav>
 </header>
