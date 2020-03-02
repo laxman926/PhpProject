@@ -28,7 +28,7 @@ if($result->num_rows > 0){
 <!-- Custom style -->
 <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
+<body style="background-color:#CFD8DC;">
 <?php require_once ('navbar.php'); ?>
 <div class="container">
     <h1>ORDER STATUS</h1>
@@ -40,10 +40,10 @@ if($result->num_rows > 0){
 			
             <!-- Order status & shipping info -->
             <div class="row col-lg-12 ord-addr-info">
-                <div class="hdr">Order Info</div>
-                <p><b>Reference ID:</b> #<?php echo $orderInfo['id']; ?></p>
-                <p><b>Total:</b> <?php echo '$'.$orderInfo['grand_total'].' CDN'; ?></p>
-                <p><b>Placed On:</b> <?php echo $orderInfo['created']; ?></p>
+                <div class="hdr">Order Info</div>&nbsp;
+                <p><b>Reference ID:</b> #<?php echo $orderInfo['id']; ?></p>&nbsp;&nbsp;&nbsp;&nbsp;
+                <p><b>Total:</b> <?php echo '$'.$orderInfo['grand_total'].' CDN'; ?></p>&nbsp;&nbsp;&nbsp;&nbsp;
+                <p><b>Placed On:</b> <?php echo $orderInfo['created']; ?></p>&nbsp;&nbsp;&nbsp;&nbsp;
                 <p><b>Buyer Name:</b> <?php echo $orderInfo['first_name'].' '.$orderInfo['last_name']; ?></p>
 <!--
                 <p><b>Email:</b> <?php echo $orderInfo['email']; ?></p>

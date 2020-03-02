@@ -35,11 +35,13 @@ if(!empty($sessData['status']['msg'])){
 
 <!-- Custom style -->
 <link href="css/style.css" rel="stylesheet">
+    
+<!--    Font Awesome icons-->
 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     
 </head>
     
-<body>
+<body style="background-color:#CFD8DC;">
 <?php require_once ('navbar.php'); ?>
 <div class="container">
     <h1 class="text-center">CHECKOUT</h1>
@@ -148,8 +150,10 @@ if(!empty($sessData['status']['msg'])){
                     
                      <?php   $product_id=array_column($_SESSION['cart'], 'product_id');
                  foreach($cartItems as $item){
-                 $q = "UPDATE products SET quantity = quantity - 1 WHERE name ='Harry Potter and the Deathly Hallows Part 1'  ";
+                     $itemname=$item["name"];
+                 $q = "UPDATE products SET quantity = quantity - 1 WHERE name ='$itemname'  ";
                  $r = mysqli_query($db,$q);
+                   
                  }
                     ?>
                     

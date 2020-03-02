@@ -1,6 +1,10 @@
 <header>
 <!-- Bootstrap link -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="css/style.css" rel="stylesheet">
+    
+    
 <?php // Initialize shopping cart class 
 include_once 'Cart.class.php'; 
 $cart = new Cart; ?>

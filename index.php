@@ -18,11 +18,13 @@ require_once 'dbConfig.php';
 
 <!-- Custom style -->
 <link href="css/style.css" rel="stylesheet">
+    
+    <!--    Font Awesome icons-->
 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 </head>
 </head>
-<body>
+<body style="background-color:#CFD8DC;">
 <?php require_once ('navbar.php'); ?>
 <div class="container">
     <h1 class="text-center ">PRODUCTS</h1>

@@ -32,7 +32,7 @@ function updateCartItem(obj,id){
 }
 </script>
 </head>
-<body>
+<body style="background-color:#CFD8DC;">
 <?php require_once ('navbar.php'); ?>
 <div class="container">
     <h1 class="text-center">SHOPPING CART</h1><br><br>
@@ -87,7 +87,7 @@ function updateCartItem(obj,id){
                     </div>
                     <div class="col-sm-12 col-md-6 text-right">
                         <?php if($cart->total_items() > 0){ ?>
-                        <a href="checkout.php" class="btn btn-lg btn-block btn-primary">Checkout</a>
+                        <a href="checkout.php" class="btn btn-lg btn-block btn-primary"style="background-color:#4CAF50">Checkout</a>
                         <?php } ?>
                     </div>
                 </div>
