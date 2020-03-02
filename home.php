@@ -26,7 +26,7 @@ require_once 'dbConfig.php';
 
 
 <img src="./images/banner.jpg" class="img-fluid mx-auto d-block" alt="Responsive image" >
-<a href="index.php"><div class="btn btn-lg  block btn-primary centered" style="background-color:#555; border: none;">View Our Products</div></a>
+<a href="index.php"><div class="btn btn-lg  block btn-primary centered" style="background-color:#555; border: none;">View Our Books</div></a>
 
   
 

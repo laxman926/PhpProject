@@ -95,18 +95,18 @@ if(!empty($sessData['status']['msg'])){
                             </div>
                         </div>
                         
-<!--
-                          <div class="row">
-                            <div class="col-xs-12">
+                        
+                            <div class="col-mb-3">
                                 <div class="form-group">
                                     <label>CARD NUMBER</label>
                                     <div class="input-group">
                                         <input type="tel" class="form-control" placeholder="Valid Card Number" />
-                                        <span class="input-group-addon"><span class="fa fa-credit-card"></span></span>
+<!--                                        <span class="input-group-addon"><span class="fa fa-credit-card"></span></span>-->
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                  
+                        
                         <div class="row">
                             <div class="col-xs-7 col-md-7">
                                 <div class="form-group">
@@ -122,13 +122,12 @@ if(!empty($sessData['status']['msg'])){
                             </div>
                         </div>
                         
--->
                         
                         
                         
                         <div class="mb-3">
                             <label for="email">Email</label>
-                            <input type="email" class="form-control" name="email" value="<?php echo !empty($postData['email'])?$postData['email']:''; ?>" required>
+                            <input type="tel" class="form-control" name="email" value="<?php echo !empty($postData['email'])?$postData['email']:''; ?>" required>
                         </div>
                         
                         <div class="mb-3">
