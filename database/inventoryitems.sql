@@ -1,0 +1,7 @@
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `image`, `quantity`, `created`, `modified`, `status`) VALUES
+(1, 'Harry Potter and the Philosopher\'s Stone', 'Harry Potter is a series of fantasy novels written by British author J. K. Rowling', 55.00, './images/book1.jpg', 22, '2020-03-01 00:00:00', '2020-03-24 00:00:00', '1'),
+(2, 'Harry Potter and the Deathly Hallows Part 2', 'Harry Potter is a series of fantasy novels written by British author J. K. Rowling', 65.00, './images/book2.jpg', 45, '2020-03-01 00:00:00', '2020-03-24 00:00:00', '1'),
+(3, 'Harry Potter and the Cursed Child', 'Harry Potter is a series of fantasy novels written by British author J. K. Rowling', 34.00, './images/book4.jpg', 50, '2020-03-01 00:00:00', '2020-03-30 00:00:00', '1'),
+(4, 'Harry Potter and the Deathly Hallows Part 1', 'Harry Potter is a series of fantasy novels written by British author J. K. Rowling', 44.00, './images/book3.jpg', 53, '2020-03-01 00:00:00', '2020-03-18 00:00:00', '1'),
+(5, 'Harry Potter and the Chamber of Secrets', 'Harry Potter is a series of fantasy novels written by British author J. K. Rowling', 76.00, './images/book6.jpg', 43, '2020-03-01 00:00:00', '2020-03-24 00:00:00', '1'),
+(6, 'Harry Potter and the Order of Phoenix', 'Harry Potter is a series of fantasy novels written by British author J. K. Rowling', 78.00, './images/book7.jpg', 16, '2020-03-01 00:00:00', '2020-03-17 00:00:00', '1');
