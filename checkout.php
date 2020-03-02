@@ -36,7 +36,9 @@ if(!empty($sessData['status']['msg'])){
 <!-- Custom style -->
 <link href="css/style.css" rel="stylesheet">
 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
 </head>
+    
 <body>
 <?php require_once ('navbar.php'); ?>
 <div class="container">
@@ -66,10 +68,12 @@ if(!empty($sessData['status']['msg'])){
                             $cartItems = $cart->contents(); 
                             foreach($cartItems as $item){ 
                         ?>
+                        
                         <li class="list-group-item d-flex justify-content-between lh-condensed">
                             <div>
                                 <h6 class="my-0"><?php echo $item["name"]; ?></h6>
                                 <small class="text-muted"><?php echo '$'.$item["price"]; ?>(<?php echo $item["qty"]; ?>)</small>
+                             
                             </div>
                             <span class="text-muted"><?php echo '$'.$item["subtotal"]; ?></span>
                         </li>
@@ -100,7 +104,7 @@ if(!empty($sessData['status']['msg'])){
                                 <div class="form-group">
                                     <label>CARD NUMBER</label>
                                     <div class="input-group">
-                                        <input type="tel" class="form-control" placeholder="Valid Card Number" />
+                                        <input type="tel" class="form-control" placeholder="Valid Card Number" required />
 <!--                                        <span class="input-group-addon"><span class="fa fa-credit-card"></span></span>-->
                                     </div>
                                 </div>
@@ -111,18 +115,18 @@ if(!empty($sessData['status']['msg'])){
                             <div class="col-xs-7 col-md-7">
                                 <div class="form-group">
                                     <label><span class="hidden-xs">EXPIRATION</span><span class="visible-xs-inline">EXP</span> DATE</label>
-                                    <input type="tel" class="form-control" placeholder="MM / YY" />
+                                    <input type="tel" class="form-control" placeholder="MM / YY" required />
                                 </div>
                             </div>
                             <div class="col-xs-5 col-md-5 float-xs-right">
                                 <div class="form-group">
                                     <label>CV CODE</label>
-                                    <input type="tel" class="form-control" placeholder="CVC" />
+                                    <input type="tel" class="form-control" placeholder="CVC" required/>
                                 </div>
                             </div>
                         </div>
                         
-                        
+
                         
                         
                         <div class="mb-3">
@@ -141,6 +145,16 @@ if(!empty($sessData['status']['msg'])){
                         <input type="hidden" name="action" value="placeOrder"/>
                         <input class="btn btn-success btn-lg btn-block" type="submit" name="checkoutSubmit" value="Place Order">
                     </form>
+                    
+                     <?php   $product_id=array_column($_SESSION['cart'], 'product_id');
+                 foreach($cartItems as $item){
+                 $q = "UPDATE products SET quantity = quantity - 1 WHERE name ='Harry Potter and the Deathly Hallows Part 1'  ";
+                 $r = mysqli_query($db,$q);
+                 }
+                    ?>
+                    
+    
+<!--$result = $db->query("UPDATE products SET Quantity = Quantity - 1 WHERE id=3;"); -->
                 </div>
             </div>
         </div>

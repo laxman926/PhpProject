@@ -45,8 +45,10 @@ if($result->num_rows > 0){
                 <p><b>Total:</b> <?php echo '$'.$orderInfo['grand_total'].' CDN'; ?></p>
                 <p><b>Placed On:</b> <?php echo $orderInfo['created']; ?></p>
                 <p><b>Buyer Name:</b> <?php echo $orderInfo['first_name'].' '.$orderInfo['last_name']; ?></p>
+<!--
                 <p><b>Email:</b> <?php echo $orderInfo['email']; ?></p>
                 <p><b>Phone:</b> <?php echo $orderInfo['phone']; ?></p>
+-->
             </div>
 			
             <!-- Order items -->
@@ -75,6 +77,7 @@ if($result->num_rows > 0){
                             <td><?php echo '$'.$price.' CDN'; ?></td>
                             <td><?php echo $quantity; ?></td>
                             <td><?php echo '$'.$sub_total.' CDN'; ?></td>
+                              
                         </tr>
                         <?php } 
                         } ?>
@@ -90,3 +93,5 @@ if($result->num_rows > 0){
 </div>
 </body>
 </html>
+
+<!--UPDATE products SET Quantity = Quantity - 1 WHERE id=3;-->

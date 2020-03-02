@@ -10,7 +10,7 @@ require_once 'dbConfig.php';
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>PHP Shopping Cart</title>
+<title>Shopping Cart</title>
 <meta charset="utf-8">
 
 <!-- Bootstrap core CSS -->
